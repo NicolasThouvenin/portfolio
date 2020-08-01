@@ -6,6 +6,18 @@
         This is where any of your application specific styles should be included
 */
 
+body {
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+    cursor: default;
+}
+
 /* INDEX */
 
 .title_name {
@@ -44,9 +56,19 @@
 }
 
 .real-block {
-    margin-top: 10px;
-    /* display: inline; */
-    /* width: 100px; */
+    margin: 10px 20px;
+    width: 250px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.real-block:hover {
+    color: #111;
+    background-color: #f0f0f0;
+    /* box-shadow: 0 4px 8px 0 rgba(150, 150, 150, 0.2), 0 6px 20px 0 rgba(200, 200, 200, 0.2); */
+    /* border: 2px solid #EEE; */
 }
 
 .real-name {
