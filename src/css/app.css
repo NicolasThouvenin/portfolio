@@ -11,11 +11,12 @@
 .title_name {
     font-size: 26px;
     margin-top: 30px;
-
 }
 
+/* END INDEX */
 
 /* CONTACT */
+
 .contact-block {
     margin-top: 20px;
 }
@@ -29,3 +30,31 @@
     font-size: 16px;
     font-style: italic;
 }
+
+/* END CONTACT */
+
+/* REALISATION */
+
+.real-category {
+    margin-top: 20px;
+}
+
+.real-title {
+    font-size: 22px;
+}
+
+.real-block {
+    margin-top: 10px;
+    /* display: inline; */
+    /* width: 100px; */
+}
+
+.real-name {
+    font-size: 16px;
+}
+
+.real-desc {
+    font-style: italic;
+}
+
+/* END REALISATION */
