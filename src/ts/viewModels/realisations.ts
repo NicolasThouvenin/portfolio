@@ -1,6 +1,16 @@
+import ko = require("knockout");
+
 class CustomersViewModel {
+  click: (input: any) => void;
+  realState: ko.Observable<string>;
 
   constructor() {
+    this.realState = ko.observable("2");
+    this.click = (input) => {
+      // console.log(input)
+      console.log(input.target.id.substring(4, 5));
+      this.realState(input.target.id.substring(4, 5));
+    }
 
   }
 
