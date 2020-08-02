@@ -5,7 +5,7 @@ class CustomersViewModel {
   realState: ko.Observable<string>;
 
   constructor() {
-    this.realState = ko.observable("2");
+    this.realState = ko.observable("0");
     this.click = (input) => {
       // console.log(input)
       console.log(input.target.id.substring(4, 5));

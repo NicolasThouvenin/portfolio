@@ -86,4 +86,29 @@ body {
     pointer-events: none;
 }
 
+.projet-block {
+
+}
+
+.projet-title {
+    font-size: 28px;
+    margin: 20px 0 10px;
+}
+
+.projet-desc {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.projet-section {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.projet-section p {
+    font-size: 16px;
+}
+
+
 /* END REALISATION */
