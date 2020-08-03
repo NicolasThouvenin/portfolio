@@ -5,6 +5,7 @@ class CustomersViewModel {
   realState: ko.Observable<string>;
 
   constructor() {
+    document.addEventListener("backbutton", this.onBackKeyDown, false);
     this.realState = ko.observable("0");
     this.click = (input) => {
       // console.log(input)
@@ -12,6 +13,13 @@ class CustomersViewModel {
       this.realState(input.target.id.substring(4, 5));
     }
 
+  }
+
+  private onBackKeyDown = () => {
+    if (this.realState() != "0") {
+      this.realState("0");
+      return false;
+    }
   }
 
   /**
