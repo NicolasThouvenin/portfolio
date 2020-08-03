@@ -77,11 +77,13 @@ body {
 }
 
 .real-name {
-    font-size: 16px;
+    font-size: 22px;
     pointer-events: none;
+    margin-bottom: 5px;
 }
 
 .real-desc {
+    font-size: 18px;
     font-style: italic;
     pointer-events: none;
 }
@@ -91,7 +93,7 @@ body {
 }
 
 .projet-title {
-    font-size: 28px;
+    font-size: 30px;
     margin: 20px 0 10px;
 }
 
@@ -103,11 +105,11 @@ body {
 
 .projet-section {
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .projet-section p {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 
