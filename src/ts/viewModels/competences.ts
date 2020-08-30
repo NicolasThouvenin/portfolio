@@ -1,15 +1,29 @@
 import ko = require("knockout");
+import Router = require("ojs/ojrouter");
+import Root from "../root";
 
 class IncidentsViewModel {
   click: (input: any) => void;
   compState: ko.Observable<string>;
+  redirect: (input: any) => void;
+  realArray: string[];
 
   constructor() {
+    this.realArray = ["index", "Calendrier Logistique", "Factory", "Bubble Up", "Big Browser", "Dungeon", "DobberMiam", "D&D Apps"];
     this.compState = ko.observable("0");
     this.click = (input) => {
       // console.log(input)
       console.log(input.target.id.substring(4, 5));
       this.compState(input.target.id.substring(4, 5));
+    }
+
+    this.redirect = (input) => {
+      // console.log(input)
+      console.log(input.target.textContent);
+      console.log(this.realArray.indexOf(input.target.textContent));
+      Router.rootInstance.store([this.realArray.indexOf(input.target.textContent)]);
+      Router.rootInstance.go("realisations");
+      // this.compState(input.target.id.substring(4, 5));
     }
   }
 

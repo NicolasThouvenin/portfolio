@@ -1,4 +1,5 @@
 import ko = require("knockout");
+import Router= require("ojs/ojrouter");
 
 class CustomersViewModel {
   click: (input: any) => void;
@@ -6,7 +7,9 @@ class CustomersViewModel {
 
   constructor() {
     document.addEventListener("backbutton", this.onBackKeyDown, false);
-    this.realState = ko.observable("0");
+    const real = Router.rootInstance.retrieve();
+    console.log(real);
+    this.realState = ko.observable(real ? real[0] : "0");
     this.click = (input) => {
       // console.log(input)
       console.log(input.target.id.substring(4, 5));

@@ -164,4 +164,13 @@ body {
     font-size: 18px;
 }
 
+.comp-link {
+    cursor: pointer;
+}
+
+.comp-link:hover {
+    cursor: pointer;
+    font-weight: 500;
+}
+
 /* END COMPETENCES */
