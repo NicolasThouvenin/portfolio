@@ -3,8 +3,190 @@
  The Universal Permissive License (UPL), Version 1.0
  -->
 <div class="oj-hybrid-padding">
-  <h1 style="margin-top: 20px;">Mes Compétences</h1>
-  <div>
-      WIP
+  <h1 id="comp0" style="margin-top: 20px; cursor: pointer; font-size: 20px;" on-click="[[click]]"
+    data-bind="visible: compState() > 0">Retour</h1>
+
+  <!-- MENU -->
+  <div class="comp-menu" data-bind="visible: compState() == 0">
+    <h1 style="margin-top: 20px;">Mes Compétences</h1>
+    <div class="comp-category">
+      <div class="comp-title">Professionnelles :</div>
+      <div id="comp1" class="comp-name" on-click="[[click]]">Algorithme et Structure de Données
+      </div>
+      <div id="comp2" class="comp-name" on-click="[[click]]">Base de Données
+      </div>
+      <div id="comp3" class="comp-name" on-click="[[click]]">Développement Web
+      </div>
+      <div id="comp4" class="comp-name" on-click="[[click]]">Gestion de Projet
+      </div>
+      <div id="comp5" class="comp-name" on-click="[[click]]">Ingénierie du logiciel
+      </div>
+    </div>
+    <div class="comp-category">
+      <div class="comp-title">Humaines :</div>
+      <div id="comp6" class="comp-name" on-click="[[click]]">Autonomie
+      </div>
+      <div id="comp7" class="comp-name" on-click="[[click]]">Curiosité
+      </div>
+      <div id="comp8" class="comp-name" on-click="[[click]]">Équipier
+      </div>
+      <div id="comp9" class="comp-name" on-click="[[click]]">Initiative
+      </div>
+      <!-- <div id="comp10" class="comp-name" on-click="[[click]]">Base de Données
+      </div> -->
+    </div>
   </div>
+  <!-- FIN MENU -->
+
+  <!-- ALGO -->
+  <div class="comp-block" data-bind="visible: compState() == 1">
+    <div class="comp-label">Algorithme et Structure de Données</div>
+    <div class="comp-desc">En informatique, une structure de données est une manière d'organiser les données pour les
+      traiter plus facilement.<br>Ces données seront ainsi utilisés au sein d'un algorithme, c'est à dire un ensemble d'opérations et de règles pouvant résoudre un problème.
+  </div>
+    <div class="comp-section">Mise en context :<p>La conception d'un algorithme et le choix de structure de données sont une première étape essentielle à tout projet de développement.<br>Cette compétence est d'ailleurs omniprésente dans toutes mes réalisations présentées ici.</p>
+    </div>
+    <div class="comp-section">Point de vue :<p>Aucun projet de développement informatique ne devrait débuter sans avoir réfléchi au préalable à l'algorithme qui devra être utilisé.<br>
+      Je ne commence ainsi jamais à coder sans avoir réfléchi et souvent schématisé sur papier l'ensemble des règles <br>
+    Au delà du degré de maîtrise de tel ou tel langage, ce qui fait un bon développeur est pour moi la faculté de choisir l'algorithme (et les structures de données qui le composeront) qui sera :<br> le plus adapté (le plus optimisé pour le problème à résoudre),<br>le plus évolutif (facilement modifiable pour répondre à un changement du problème initial)<br>et le plus maintenable (n'importe quel développeur de l'équipe pourra se l'approprier facilement pour le modifier).</p>
+    </div>
+    <div class="comp-section">Projets liés :<p>Calendrier Logistique, Factory, Bubble Up, Big Browser, Dungeon, DobberMiam, D&D Apps</p>
+    </div>
+  </div>
+  <!-- FIN ALGO -->
+
+  <!-- BDD -->
+  <div class="comp-block" data-bind="visible: compState() == 2">
+    <div class="comp-label">Base de Données</div>
+    <div class="comp-desc">Une base de données est une collection d’informations organisées afin d’être facilement
+      consultables, gérables et mises à jour.<br>
+      Elles sont de deux types, relationnelles et non relationnelles.<br>
+      Au sein d’une base de données relationnelle, les données sont organisées en lignes, colonnes et tableaux.<br>Elles
+      sont indexées afin de pouvoir facilement trouver les informations recherchées à l’aide d’un logiciel informatique.
+      Au sein d’une base de données non relationnelle, les données sont hébergées sous la forme de données brutes
+      déstructurées
+    </div>
+    <div class="comp-section">Mise en context :<p></p>
+    </div>
+    <div class="comp-section">Point de vue :<p></p>
+    </div>
+    <div class="comp-section">Projets liés :<p>Calendrier Logistique, Factory, BubbleUp, BigBrowser, DobberMiam</p>
+    </div>
+  </div>
+  <!-- FIN BD -->
+
+  <!-- WEB -->
+  <div class="comp-block" data-bind="visible: compState() == 3">
+    <div class="comp-label">Développement Web</div>
+    <div class="comp-desc">Une base de données est une collection d’informations organisées afin d’être facilement
+      consultables, gérables et mises à jour.<br>
+      Elles sont de deux types, relationnelles et non relationnelles.<br>
+      Au sein d’une base de données relationnelle, les données sont organisées en lignes, colonnes et tableaux.<br>Elles
+      sont indexées afin de pouvoir facilement trouver les informations recherchées à l’aide d’un logiciel informatique.
+      Au sein d’une base de données non relationnelle, les données sont hébergées sous la forme de données brutes
+      déstructurées
+    </div>
+    <div class="comp-section">Mise en context :<p></p>
+    </div>
+    <div class="comp-section">Point de vue :<p></p>
+    </div>
+    <div class="comp-section">Projets liés :<p>Calendrier Logistique, BubbleUp, BigBrowser, DobberMiam</p>
+    </div>
+  </div>
+  <!-- FIN WEB -->
+
+  <!-- GESTION -->
+  <div class="comp-block" data-bind="visible: compState() == 4">
+    <div class="comp-label">Gestion de Projet</div>
+    <div class="comp-desc">Une base de données est une collection d’informations organisées afin d’être facilement
+      consultables, gérables et mises à jour.<br>
+      Elles sont de deux types, relationnelles et non relationnelles.<br>
+      Au sein d’une base de données relationnelle, les données sont organisées en lignes, colonnes et tableaux.<br>Elles
+      sont indexées afin de pouvoir facilement trouver les informations recherchées à l’aide d’un logiciel informatique.
+      Au sein d’une base de données non relationnelle, les données sont hébergées sous la forme de données brutes
+      déstructurées
+    </div>
+    <div class="comp-section">Mise en context :<p></p>
+    </div>
+    <div class="comp-section">Point de vue :<p></p>
+    </div>
+    <div class="comp-section">Projets liés :<p>Factory, BubbleUp</p>
+    </div>
+  </div>
+  <!-- FIN GESTION -->
+
+  <!-- LOGICIEL -->
+  <div class="comp-block" data-bind="visible: compState() == 5">
+    <div class="comp-label">Ingénierie du logiciel</div>
+    <div class="comp-desc">
+    </div>
+    <div class="comp-section">Mise en context :<p></p>
+    </div>
+    <div class="comp-section">Point de vue :<p></p>
+    </div>
+    <div class="comp-section">Projets liés :<p>Factory, Bubble Up, Big Browser, DobberMiam, D&D Apps</p>
+    </div>
+  </div>
+  <!-- FIN LOGICIEL -->
+
+  <!-- AUTO -->
+  <div class="comp-block" data-bind="visible: compState() == 6">
+    <div class="comp-label">Autonomie</div>
+    <div class="comp-desc">
+    </div>
+    <div class="comp-section">Mise en context :<p></p>
+    </div>
+    <div class="comp-section">Point de vue :<p></p>
+    </div>
+    <div class="comp-section">Projets liés :<p>Calendrier Logistique, DobberMiam, D&D Apps</p>
+    </div>
+  </div>
+  <!-- FIN AUTO -->
+
+  <!-- CURIOSITY -->
+  <div class="comp-block" data-bind="visible: compState() == 7">
+    <div class="comp-label">Curiosité</div>
+    <div class="comp-desc">
+    </div>
+    <div class="comp-section">Mise en context :<p></p>
+    </div>
+    <div class="comp-section">Point de vue :<p></p>
+    </div>
+    <div class="comp-section">Projets liés :<p>Calendrier Logistique, Factory, Big Browser, Dungeon, DobberMiam</p>
+    </div>
+  </div>
+  <!-- FIN CURIOSITY -->
+
+  <!-- TEAM -->
+  <div class="comp-block" data-bind="visible: compState() == 8">
+    <div class="comp-label">Équipier</div>
+    <div class="comp-desc">
+    </div>
+    <div class="comp-section">Mise en context :<p></p>
+    </div>
+    <div class="comp-section">Point de vue :<p></p>
+    </div>
+    <div class="comp-section">Projets liés :<p>Factory, Bubble Up, Big Browser, Dungeon</p>
+    </div>
+  </div>
+  <!-- FIN TEAM -->
+
+  <!-- INIT -->
+  <div class="comp-block" data-bind="visible: compState() == 9">
+    <div class="comp-label">Initiative</div>
+    <div class="comp-desc">
+    </div>
+    <div class="comp-section">Mise en context :<p></p>
+    </div>
+    <div class="comp-section">Point de vue :<p></p>
+    </div>
+    <div class="comp-section">Projets liés :<p>Calendrier Logistique, Factory, Bubble Up, Dungeon, DobberMiam, D&D Apps</p>
+    </div>
+  </div>
+  <!-- FIN INIT -->
+
+
+
+  <h1 id="comp0" style="margin-top: 20px; cursor: pointer; font-size: 20px;" on-click="[[click]]"
+    data-bind="visible: compState() > 0">Retour</h1>
 </div>

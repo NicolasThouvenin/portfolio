@@ -160,7 +160,7 @@
         du client android contenant l'interface du jeu.</p>
     </div>
     <div class="projet-section">Compétences : <p>Ingénierie du logiciel, Algorithme et Structure de Données, Base de
-        Données, Initiative, Autonomie, Curiosité.</p>
+        Données, Initiative, Curiosité.</p>
     </div>
   </div>
   <!-- FIN Big Browser -->
@@ -185,8 +185,7 @@
         d'ajouter de la musique à chaque niveaux du jeu.<br>
         Nous avions également codé un pilote pour pouvoir brancher une manette et jouer avec.</p>
     </div>
-    <div class="projet-section">Compétences :<p>Ingénierie du logiciel, Algorithme et Structure de Données, Initiative,
-        Autonomie, Curiosité.</p>
+    <div class="projet-section">Compétences :<p>Ingénierie du logiciel, Algorithme et Structure de Données, Initiative, Curiosité.</p>
     </div>
   </div>
   <!-- FIN Dungeon -->
@@ -212,7 +211,9 @@
     <div class="projet-section">Fonctionnement :<p>Un utilisateur connecté pourra consulter, commenter et noter les
         recettes présentes sur le site. Il pourra également poster les siennes.<br>La recherche de recette pourra être
         effectuée à partir de mot-clefs, ou à partir d'ingrédients précis (ou en excluant certains ingrédients).<br>Un
-        utilisateur pourra également disposer d'une liste de recettes favorites, facilement accessibles.</p>
+        utilisateur pourra également disposer d'une liste de recettes favorites, facilement accessibles.<br>La base de
+        données a été initialement conçue en SQL (PostgreSQL), mais n'ayant auparavant jamais réalisé de projet en
+        NoSQL, j'ai décidé de la refaire avec MongoDB.<br>L'API est réalisée avec NodeJS et Fastify.</p>
     </div>
     <div class="projet-section">Compétences :<p>Développement Web, Algorithme et Structure de Données, Initiative,
         Autonomie, Curiosité.</p>
@@ -246,4 +247,7 @@
     <div class="projet-section">Compétences :<p>Développement Web, Algorithme et Structure de Données, Autonomie</div>
   </div>
   <!-- FIN Fantasy SpellBook -->
+
+  <h1 id="real0" style="margin-top: 20px; cursor: pointer; font-size: 20px;" on-click="[[click]]"
+    data-bind="visible: realState() > 0">Retour</h1>
 </div>

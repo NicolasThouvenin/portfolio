@@ -1,7 +1,16 @@
+import ko = require("knockout");
+
 class IncidentsViewModel {
+  click: (input: any) => void;
+  compState: ko.Observable<string>;
 
   constructor() {
-
+    this.compState = ko.observable("0");
+    this.click = (input) => {
+      // console.log(input)
+      console.log(input.target.id.substring(4, 5));
+      this.compState(input.target.id.substring(4, 5));
+    }
   }
 
   /**

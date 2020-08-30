@@ -114,3 +114,54 @@ body {
 
 
 /* END REALISATION */
+
+/* COMPETENCES */
+
+.comp-category {
+    margin-top: 20px;
+    width: 400px;
+    margin: 10px 50px;
+    padding-top: 20px;
+    float: left;
+    height: 500px;
+}
+
+.comp-title {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.comp-name {
+    padding: 5px 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.comp-name:hover {
+    color: #111;
+    background-color: #f0f0f0;
+}
+
+.comp-label {
+    font-size: 30px;
+    margin: 20px 0 10px;
+}
+
+.comp-desc {
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.comp-section {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.comp-section p {
+    font-size: 18px;
+}
+
+/* END COMPETENCES */

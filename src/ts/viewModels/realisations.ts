@@ -16,6 +16,7 @@ class CustomersViewModel {
   }
 
   private onBackKeyDown = () => {
+    console.log('backbutton')
     if (this.realState() != "0") {
       this.realState("0");
       return false;
