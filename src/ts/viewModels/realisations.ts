@@ -1,19 +1,29 @@
 import ko = require("knockout");
-import Router= require("ojs/ojrouter");
+import Router = require("ojs/ojrouter");
 
 class CustomersViewModel {
   click: (input: any) => void;
   realState: ko.Observable<string>;
+  compArray: string[];
+  redirect: (input: any) => void;
 
   constructor() {
     document.addEventListener("backbutton", this.onBackKeyDown, false);
+    this.compArray = ["index", "Algorithme et Structure de Données", "Base de Données", "Développement Web", "Gestion de Projet", "Ingénierie du logiciel", "Autonomie", "Curiosité", "Équipier", "Initiative"];
     const real = Router.rootInstance.retrieve();
-    console.log(real);
+    if (real) {
+      Router.rootInstance.store([0]);
+    }
     this.realState = ko.observable(real ? real[0] : "0");
     this.click = (input) => {
       // console.log(input)
       console.log(input.target.id.substring(4, 5));
       this.realState(input.target.id.substring(4, 5));
+    }
+
+    this.redirect = (input) => {
+      Router.rootInstance.store([this.compArray.indexOf(input.target.textContent)]);
+      Router.rootInstance.go("competences");
     }
 
   }

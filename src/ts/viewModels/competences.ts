@@ -10,7 +10,11 @@ class IncidentsViewModel {
 
   constructor() {
     this.realArray = ["index", "Calendrier Logistique", "Factory", "Bubble Up", "Big Browser", "Dungeon", "DobberMiam", "D&D Apps"];
-    this.compState = ko.observable("0");
+    const comp = Router.rootInstance.retrieve();
+    if (comp) {
+      Router.rootInstance.store([0]);
+    }
+    this.compState = ko.observable(comp ? comp[0] : "0");
     this.click = (input) => {
       // console.log(input)
       console.log(input.target.id.substring(4, 5));
