@@ -7,13 +7,13 @@
 */
 
 body {
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
     /* Safari */
-    -moz-user-select: none;
+    /* -moz-user-select: none; */
     /* Firefox */
-    -ms-user-select: none;
+    /* -ms-user-select: none; */
     /* IE10+/Edge */
-    user-select: none;
+    /* user-select: none; */
     /* Standard */
     cursor: default;
 }
@@ -118,12 +118,13 @@ body {
 /* COMPETENCES */
 
 .comp-category {
-    margin-top: 20px;
-    width: 400px;
-    margin: 10px 50px;
+    /* margin-top: 20px; */
+    /* width: 500px;
+    min-width: 300px; */
+    margin: 20px 0 10px 10%;
     padding-top: 20px;
     float: left;
-    height: 500px;
+    height: fit-content;
 }
 
 .comp-title {

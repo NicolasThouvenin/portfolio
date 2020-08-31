@@ -15,6 +15,7 @@ class IncidentsViewModel {
       Router.rootInstance.store([0]);
     }
     this.compState = ko.observable(comp ? comp[0] : "0");
+    window.scrollTo(0,0);
     this.click = (input) => {
       // console.log(input)
       console.log(input.target.id.substring(4, 5));

@@ -19,8 +19,8 @@
       </div>
       <div id="comp4" class="comp-name" on-click="[[click]]">Gestion de Projet
       </div>
-      <div id="comp5" class="comp-name" on-click="[[click]]">Ingénierie du logiciel
-      </div>
+      <!-- <div id="comp5" class="comp-name" on-click="[[click]]">Ingénierie du logiciel
+      </div> -->
     </div>
     <div class="comp-category">
       <div class="comp-title">Humaines :</div>
@@ -28,10 +28,10 @@
       </div>
       <div id="comp7" class="comp-name" on-click="[[click]]">Curiosité
       </div>
-      <div id="comp8" class="comp-name" on-click="[[click]]">Équipier
+      <div id="comp8" class="comp-name" on-click="[[click]]">Esprit d'équipe
       </div>
-      <div id="comp9" class="comp-name" on-click="[[click]]">Initiative
-      </div>
+      <!-- <div id="comp9" class="comp-name" on-click="[[click]]">Initiative
+      </div> -->
       <!-- <div id="comp10" class="comp-name" on-click="[[click]]">Base de Données
       </div> -->
     </div>
@@ -51,13 +51,14 @@
         dans toutes mes réalisations présentées ici.</p>
     </div>
     <div class="comp-section">Point de vue :<p>Aucun projet de développement informatique ne devrait débuter sans avoir
-        réfléchi au préalable à l'algorithme qui devra être utilisé.<br>
-        Je ne commence ainsi jamais à coder sans avoir réfléchi et souvent schématisé sur papier l'ensemble des règles
+        réfléchi au préalable à l'algorithme qui devra être utilisé. Je ne commence ainsi jamais à coder sans avoir
+        réfléchi et souvent schématisé sur papier l'ensemble des règles []
         <br>
         Au delà du degré de maîtrise de tel ou tel langage, ce qui fait un bon développeur est pour moi la faculté de
-        choisir l'algorithme (et les structures de données qui le composeront) qui sera :<br> le plus adapté (le plus
-        optimisé pour le problème à résoudre),<br>le plus évolutif (facilement modifiable pour répondre à un changement
-        du problème initial)<br>et le plus maintenable (n'importe quel développeur de l'équipe pourra se l'approprier
+        choisir l'algorithme (et les structures de données qui le composeront) qui sera :<br> - le plus adapté (optimisé
+        pour le problème à résoudre),<br> - le plus évolutif (facilement modifiable pour répondre à un changement
+        du problème initial),<br> - et le plus maintenable (n'importe quel développeur de l'équipe pourra se
+        l'approprier
         facilement pour le modifier).</p>
     </div>
     <div class="comp-section">Projets liés :<p>
@@ -65,8 +66,8 @@
         <span class="comp-link" on-click="[[redirect]]">Factory</span>,
         <span class="comp-link" on-click="[[redirect]]">Bubble Up</span>,
         <span class="comp-link" on-click="[[redirect]]">Big Browser</span>,
-        <span class="comp-link" on-click="[[redirect]]">Dungeon</span>, 
-        <span class="comp-link" on-click="[[redirect]]">DobberMiam</span>, 
+        <span class="comp-link" on-click="[[redirect]]">Dungeon</span>,
+        <span class="comp-link" on-click="[[redirect]]">DobberMiam</span>,
         <span class="comp-link" on-click="[[redirect]]">D&D Apps</span>.</p>
     </div>
   </div>
@@ -77,16 +78,16 @@
     <div class="comp-label">Base de Données</div>
     <div class="comp-desc">Une base de données (BDD) est une collection d’informations organisées afin d’être facilement
       consultables, gérables et mises à jour.<br>
-      Elles sont de deux types, relationnelles et non relationnelles.<br>
+      Elles sont de deux types, relationnelles ou non relationnelles.<br>
       Au sein d’une BDD relationnelle, les données sont organisées en lignes, colonnes et tableaux.<br>Elles
       sont indexées afin de pouvoir facilement trouver les informations recherchées à l’aide d’un logiciel informatique.
       Au sein d’une BDD non relationnelle, les données sont hébergées sous la forme de données brutes
       déstructurées.
     </div>
     <div class="comp-section">Mise en contexte :<p>L'essentiel de mon activité au sein de GFI concerne un ERP, un
-        logiciel basés sur une BDD Oracle.<br>
-        Tous les projets que j'ai pu réalisé ou auxquels j'ai participé au sein de mon équipe impliquaient la
-        manipulations de données issues de cette dernière.<br>
+        logiciel basé sur une BDD Oracle. Tous les projets que j'ai pu réaliser ou auxquels j'ai participé au sein de
+        mon équipe impliquaient la
+        manipulation de données issues de cette dernière.<br>
         De plus, beaucoup de projets web que j'ai pu réaliser à l'école ou en perso contiennent également une BDD.</p>
     </div>
     <div class="comp-section">Point de vue :<p>Les technologies autour des BDD sont pour moi incontournables, aussi bien
@@ -94,7 +95,7 @@
         développement web, qui m'intéresse fortement.<br>
         Si mon parcours professionnel m'a donné de très solides bases dans l'utilisation des BDD relationnelles, c'est
         avec beaucoup d'intérêt que j'ai commencé le projet <span class="comp-link"
-          on-click="[[redirect]]">DobberMiam</span> utilisant une BDD non-relationnelle.</p>
+          on-click="[[redirect]]">DobberMiam</span> utilisant une BDD non relationnelle.</p>
     </div>
     <div class="comp-section">Projets liés :<p>
         <span class="comp-link" on-click="[[redirect]]">Calendrier Logistique</span>,
@@ -109,25 +110,34 @@
   <!-- WEB -->
   <div class="comp-block" data-bind="visible: compState() == 3">
     <div class="comp-label">Développement Web</div>
-    <div class="comp-desc">Le développement Web regroupe tous les aspects de la créations de pages web.<br>Cela comprend
+    <div class="comp-desc">Le développement Web regroupe tous les aspects de la création de pages web.<br>Cela comprend
       le "front", c'est à dire le design de l'interface utilisateur, mais aussi le "back", la partie liée au serveur et
       aux couches d'accès de données.<br>
 
     </div>
     <div class="comp-section">Mise en contexte :<p>Beaucoup de projets réalisés en entreprise autour de l'ERP JD Edwards
-        concernent son interface web.<br>De même, la plupart des projets réalisés en formation sont des applications web
+        concernent son interface web. L'essentiel de mon activité professionnelle aujourd'hui
+        consiste donc en la création de pages web, ou d'applications hybrides basées sur ces mêmes technologies.<br>De
+        même, la plupart des projets réalisés en formation sont des applications web
         (<span class="comp-link" on-click="[[redirect]]">Bubble Up</span>,
-        <span class="comp-link" on-click="[[redirect]]">Big Browser</span>).<br>
+        <span class="comp-link" on-click="[[redirect]]">Big Browser</span>).
 
       </p>
     </div>
-    <div class="comp-section">Point de vue :<p></p>
+    <div class="comp-section">Point de vue :<p>Les technologies liées au web m'intéressent particulièrement, et
+        représentent la majorité des projets présentés ici.<br>C'est cet intérêt qui a façonné mon évolution au sein de
+        mon entreprise, me passant à plein temps sur les projets de ce type.<br>C'est également cet intérêt qui a dirigé
+        mes projets personnels, qui sont soit des applications hybrides soit des applications web.
+        <!-- //concerne par ailleurs ce domaine, -->
+      </p>
     </div>
     <div class="comp-section">Projets liés :<p>
         <span class="comp-link" on-click="[[redirect]]">Calendrier Logistique</span>,
+        <span class="comp-link" on-click="[[redirect]]">Factory</span>,
         <span class="comp-link" on-click="[[redirect]]">Bubble Up</span>,
         <span class="comp-link" on-click="[[redirect]]">Big Browser</span>,
-        <span class="comp-link" on-click="[[redirect]]">DobberMiam</span>.
+        <span class="comp-link" on-click="[[redirect]]">DobberMiam</span>,
+        <span class="comp-link" on-click="[[redirect]]">D&D Apps</span>.
       </p>
     </div>
   </div>
@@ -136,11 +146,23 @@
   <!-- GESTION -->
   <div class="comp-block" data-bind="visible: compState() == 4">
     <div class="comp-label">Gestion de Projet</div>
-    <div class="comp-desc">
+    <div class="comp-desc">La gestion de projet est l'ensemble des activités visant à
+      organiser le bon déroulement d’un projet et à en atteindre les objectifs. Elle consiste à appliquer les méthodes,
+      techniques, et outils de gestion spécifiques aux différentes étapes du projet, depuis l'étude de faisabilité
+      jusqu'à l'achèvement du projet.
     </div>
-    <div class="comp-section">Mise en contexte :<p></p>
+    <div class="comp-section">Mise en contexte :<p>La gestion de projet a été une part importante de ma formation, à
+        l'école comme en entreprise. Ainsi, j'ai pu passer grace à GFI plusieurs certification: ITIL Fundation, PRINCE2
+        Fundation & Practicionner, et bénéficier d'un cycle de formation à la méthodologie SCRUM.<br>Cette formation
+        s'est doublée de celle reçu à l'école, avec une mise en application lors de la réalisation de <span
+          class="comp-link" on-click="[[redirect]]">Bubble Up</span>, qui est mon premier projet SCRUM.<br>En
+        entreprise,
+        le projet <span class="comp-link" on-click="[[redirect]]">Factory</span> auquel j'ai participé avait également
+        une approche agile.</p>
     </div>
-    <div class="comp-section">Point de vue :<p></p>
+    <div class="comp-section">Point de vue :<p>L'utilisation d'une méthode de gestion de projet, qu'elle soit agile ou
+        non, est indispensable à la réalisation de tout projet, particulièrement lorsque celui-ci a une contrainte de
+        temps et/ou une équipe importante.</p>
     </div>
     <div class="comp-section">Projets liés :<p>
         <span class="comp-link" on-click="[[redirect]]">Factory</span>,
@@ -151,7 +173,7 @@
   <!-- FIN GESTION -->
 
   <!-- LOGICIEL -->
-  <div class="comp-block" data-bind="visible: compState() == 5">
+  <!-- <div class="comp-block" data-bind="visible: compState() == 5">
     <div class="comp-label">Ingénierie du logiciel</div>
     <div class="comp-desc">
     </div>
@@ -166,7 +188,7 @@
         <span class="comp-link" on-click="[[redirect]]">DobberMiam</span>,
         <span class="comp-link" on-click="[[redirect]]">D&D Apps</span>.</p>
     </div>
-  </div>
+  </div> -->
   <!-- FIN LOGICIEL -->
 
   <!-- AUTO -->
@@ -207,7 +229,7 @@
 
   <!-- TEAM -->
   <div class="comp-block" data-bind="visible: compState() == 8">
-    <div class="comp-label">Équipier</div>
+    <div class="comp-label">Esprit d'équipe</div>
     <div class="comp-desc">
     </div>
     <div class="comp-section">Mise en contexte :<p></p>
@@ -224,7 +246,7 @@
   <!-- FIN TEAM -->
 
   <!-- INIT -->
-  <div class="comp-block" data-bind="visible: compState() == 9">
+  <!-- <div class="comp-block" data-bind="visible: compState() == 9">
     <div class="comp-label">Initiative</div>
     <div class="comp-desc">
     </div>
@@ -241,10 +263,24 @@
         <span class="comp-link" on-click="[[redirect]]">D&D Apps</span>.
       </p>
     </div>
-  </div>
+  </div> -->
   <!-- FIN INIT -->
 
-
+  <!-- EASTER -->
+  <div class="comp-block" data-bind="visible: compState() == 10">
+    <div class="comp-label">Gourmet</div>
+    <div class="comp-desc">
+    </div>
+    <div class="comp-section">Mise en contexte :<p></p>
+    </div>
+    <div class="comp-section">Point de vue :<p></p>
+    </div>
+    <div class="comp-section">Projets liés :<p>
+        <span class="comp-link" on-click="[[redirect]]">DobberMiam</span>.
+      </p>
+    </div>
+  </div>
+  <!-- FIN EASTER -->
 
   <h1 id="comp0" style="margin-top: 20px; cursor: pointer; font-size: 20px;" on-click="[[click]]"
     data-bind="visible: compState() > 0">Retour</h1>
