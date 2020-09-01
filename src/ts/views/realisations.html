@@ -10,39 +10,41 @@
   <div class="real-menu" data-bind="visible: realState() == 0">
     <h1 style="margin-top: 20px;">Mes Réalisations</h1>
     <div class="real-category">
-      <div class="real-title">En Entreprise :</div>
+      <div class="real-title"><span class="demo-icon-font-24 moon-user-tie-icon-16"></span> En Entreprise :</div>
       <div id="real1" class="real-block" on-click="[[click]]">
-        <div class="real-name">Calendrier Logistique</div>
+        <div class="real-name"><span class="demo-icon-font-24 moon-calendar-icon-16"></span> Calendrier Logistique</div>
         <div class="real-desc">Application web de calendrier de disponibilités client.</div>
       </div>
       <div id="real2" class="real-block" on-click="[[click]]">
-        <div class="real-name">Factory</div>
+        <div class="real-name"><span class="demo-icon-font-24 moon-tablet-icon-16"></span> Factory</div>
         <div class="real-desc">Appli tablette à destination d'opérateurs sur une chaîne de production.</div>
       </div>
     </div>
     <div class="real-category">
-      <div class="real-title">En École :</div>
+      <div class="real-title"><span class="demo-icon-font-24 demo-education-icon-24"></span> En École :</div>
       <div id="real3" class="real-block" on-click="[[click]]">
-        <div class="real-name">Bubble Up</div>
+        <div class="real-name"><span class="demo-icon-font-24 moon-bubbles-icon-16"></span> Bubble Up</div>
         <div class="real-desc">Application web de partage collaboratif de comics.</div>
       </div>
       <div id="real4" class="real-block" on-click="[[click]]">
-        <div class="real-name">Big Browser</div>
+        <div class="real-name"><span class="demo-icon-font-24 moon-earth-icon-16"></span> Big Browser</div>
         <div class="real-desc">Application web de quiz de culture géographique.</div>
       </div>
       <div id="real5" class="real-block" on-click="[[click]]">
-        <div class="real-name">Dungeon: The Quest of Sir Beback</div>
+        <div class="real-name"><span class="demo-icon-font-24 moon-pacman-icon-16"></span> Dungeon: The Quest of Sir
+          Beback</div>
         <div class="real-desc">Jeux d'aventure 2D en pixel art.</div>
       </div>
     </div>
     <div class="real-category">
-      <div class="real-title">Personnelles :</div>
+      <div class="real-title"><span class="demo-icon-font-24 demo-person-icon-24"></span> Personnelles :</div>
       <div id="real6" class="real-block" on-click="[[click]]">
-        <div class="real-name">DobberMiam</div>
+        <div class="real-name"><span class="demo-icon-font-24 moon-spoon-knife-icon-16"></span> DobberMiam</div>
         <div class="real-desc">Site web de partage de recettes de cuisine.</div>
       </div>
       <div id="real7" class="real-block" on-click="[[click]]">
-        <div class="real-name">D&D Apps : Spellbook & Combat Calculator</div>
+        <div class="real-name"><span class="demo-icon-font-24 moon-dice-icon-16"></span> D&D Apps : Spellbook & Combat
+          Calculator</div>
         <div class="real-desc">Applications mobile de support au jeu de rôle.</div>
       </div>
     </div>
@@ -51,9 +53,13 @@
 
   <!-- CALENDRIER -->
   <div class="projet-block" data-bind="visible: realState() == 1">
-    <div class="projet-title">Calendrier Logistique</div>
+    <div class="projet-title"><span class="demo-icon-font-24 moon-calendar-icon-16"></span> Calendrier Logistique</div>
     <div class="projet-desc">Application web de calendrier de disponibilités client.</div>
-    <div class="projet-section">Technologies utilisées : <p>JS, Jquery, OracleJet, NodeJS, OracleDB</p>
+    <div class="projet-section">Technologies utilisées : <p><span
+          class="demo-icon-font-24 brands-javascript-icon"></span> JavaScript, <span
+          class="demo-icon-font-24 brands-jquery-icon"></span> Jquery, <img src="../../images/ojet.ico" alt="OracleJet"
+          width="24" height="24"> OracleJet, <span class="demo-icon-font-24 brands-node-dot-js-icon"></span> NodeJS,
+        <span class="demo-icon-font-24 brands-oracle-icon"></span> OracleDB</p>
     </div>
     <div class="projet-section">Contexte : <p> Un de nos clients avait besoin d'une interface pour facilement consulter
         et mettre à jour les disponibilités de leurs fournisseurs.<br>Cette fonctionnalité n'existant pas dans l'ERP (JD
@@ -70,26 +76,39 @@
         technologies très peu utilisées dans mon service.</p>
     </div>
     <div class="projet-section">Fonctionnement :<p>Cette application web était accessible depuis le client web de l'ERP,
-        où elle était intégrée à la page de consultation des fournisseurs.<br>Elle a été conçue avec le framework JS
+        où elle était intégrée à la page de consultation des fournisseurs.<br>Elle a été conçue avec le framework
+        JavaScript
         d'Oracle, Oracle JET, et avec la librairie FullCalendar.<br>Elle utilise l'API REST de JD Edwards pour consulter
         la base de données Oracle de l'ERP.<br>Le serveur web installé est un serveur NodeJS.</p>
     </div>
     <div class="projet-section">Compétences : <p>
-        <span class="comp-link" on-click="[[redirect]]">Algorithme et Structure de Données</span>,
-        <span class="comp-link" on-click="[[redirect]]">Base de Données</span>,
-        <span class="comp-link" on-click="[[redirect]]">Développement Web</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-tree-icon-16"></span>
+          Algorithme et Structure de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-database-icon-16"></span>
+          Base de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-sphere-icon-16"></span>
+          Développement Web</span>,
         <!-- <span class="comp-link" on-click="[[redirect]]">Ingénierie du logiciel</span>, -->
-        <span class="comp-link" on-click="[[redirect]]">Autonomie</span>,
-        <span class="comp-link" on-click="[[redirect]]">Curiosité</span>.</p>
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-compass2-icon-16"></span>
+          Autonomie</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-eye-icon-16"></span>
+          Curiosité</span>.</p>
     </div>
   </div>
   <!-- FIN CALENDRIER -->
 
   <!-- FACTORY -->
   <div class="projet-block" data-bind="visible: realState() == 2">
-    <div class="projet-title">Factory</div>
+    <div class="projet-title"><span class="demo-icon-font-24 moon-tablet-icon-16"></span> Factory</div>
     <div class="projet-desc">Appli tablette à destination d'opérateurs sur une chaîne de production.</div>
-    <div class="projet-section">Technologies utilisées : <p>Js, Typescript, OracleJet, Cordova, NodeJS, OracleDB, Git
+    <div class="projet-section">Technologies utilisées : <p>
+        <span class="demo-icon-font-24 brands-javascript-icon"></span> JavaScript,
+        <span class="demo-icon-font-24 brands-typescript-icon"></span> Typescript,
+        <img src="../../images/ojet.ico" alt="OracleJet" width="24" height="24"> OracleJet,
+        <span class="demo-icon-font-24 brands-node-dot-js-icon"></span> NodeJS,
+        <span class="demo-icon-font-24 brands-apachecordova-icon"></span> Cordova,
+        <span class="demo-icon-font-24 brands-oracle-icon"></span> OracleDB,
+        <span class="demo-icon-font-24 brands-git-icon"></span> Git
       </p>
     </div>
     <div class="projet-section">Contexte : <p>Un de nos clients avait besoin de fournir aux opérateurs de leurs lignes
@@ -117,13 +136,19 @@
         été mis en place, afin d'alerter les équipes concernées.</p>
     </div>
     <div class="projet-section">Compétences : <p>
-        <span class="comp-link" on-click="[[redirect]]">Algorithme et Structure de Données</span>,
-        <span class="comp-link" on-click="[[redirect]]">Base de Données</span>,
-        <span class="comp-link" on-click="[[redirect]]">Développement Web</span>,
-        <span class="comp-link" on-click="[[redirect]]">Gestion de Projet</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-tree-icon-16"></span>
+          Algorithme et Structure de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-database-icon-16"></span>
+          Base de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-sphere-icon-16"></span>
+          Développement Web</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-clipboard-icon-16"></span>
+          Gestion de Projet</span>,
         <!-- <span class="comp-link" on-click="[[redirect]]">Ingénierie du logiciel</span>, -->
-        <span class="comp-link" on-click="[[redirect]]">Curiosité</span>,
-        <span class="comp-link" on-click="[[redirect]]">Esprit d'équipe</span>.
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-eye-icon-16"></span>
+          Curiosité</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 demo-people-icon-24"></span>
+          Esprit d'équipe</span>.
       </p>
     </div>
   </div>
@@ -131,9 +156,12 @@
 
   <!-- Bubble Up -->
   <div class="projet-block" data-bind="visible: realState() == 3">
-    <div class="projet-title">Bubble Up</div>
+    <div class="projet-title"><span class="demo-icon-font-24 moon-bubbles-icon-16"></span> Bubble Up</div>
     <div class="projet-desc">Application web de partage collaboratif de comics.</div>
-    <div class="projet-section">Technologies utilisées : <p>PHP, MySQL</p>
+    <div class="projet-section">Technologies utilisées : <p>
+        <span class="demo-icon-font-24 brands-mysql-icon"></span> MySQL,
+        <span class="demo-icon-font-24 brands-php-icon"></span> PHP
+      </p>
     </div>
     <div class="projet-section">Contexte : <p>Comme projet de formation, nous devions créer une page web en PHP.<br>Nous
         avons décidé de créer une plateforme de partage et de lecture de bande dessinée, où chaque utilisateur pourrait
@@ -148,22 +176,36 @@
         mobiles.<br>Ce projet a été réalisé en suivant la méthode SCRUM.</p>
     </div>
     <div class="projet-section">Compétences : <p>
-        <span class="comp-link" on-click="[[redirect]]">Algorithme et Structure de Données</span>,
-        <span class="comp-link" on-click="[[redirect]]">Base de Données</span>,
-        <span class="comp-link" on-click="[[redirect]]">Développement Web</span>,
-        <span class="comp-link" on-click="[[redirect]]">Gestion de Projet</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-tree-icon-16"></span>
+          Algorithme et Structure de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-database-icon-16"></span>
+          Base de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-sphere-icon-16"></span>
+          Développement Web</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-clipboard-icon-16"></span>
+          Gestion de Projet</span>,
         <!-- <span class="comp-link" on-click="[[redirect]]">Ingénierie du logiciel</span>, -->
-        <span class="comp-link" on-click="[[redirect]]">Curiosité</span>,
-        <span class="comp-link" on-click="[[redirect]]">Esprit d'équipe</span>.</p>
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-eye-icon-16"></span>
+          Curiosité</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 demo-people-icon-24"></span>
+          Esprit d'équipe</span>.</p>
     </div>
   </div>
   <!-- FIN Bubble Up -->
 
   <!-- Big Browser -->
   <div class="projet-block" data-bind="visible: realState() == 4">
-    <div class="projet-title">Big Browser</div>
+    <div class="projet-title"><span class="demo-icon-font-24 moon-earth-icon-16"></span> Big Browser</div>
     <div class="projet-desc">Application web de quiz de culture géographique.</div>
-    <div class="projet-section">Technologies utilisées : <p>PostgreSQL, Java, graphQL, Springboot, C#, XAML, Android</p>
+    <div class="projet-section">Technologies utilisées : <p>
+        <span class="demo-icon-font-24 brands-android-icon"></span> Android,
+        <span class="demo-icon-font-24 brands-csharp-icon"></span> C#,
+        <span class="demo-icon-font-24 brands-graphql-icon"></span> GraphQL,
+        <span class="demo-icon-font-24 brands-java-icon"></span> Java,
+        <span class="demo-icon-font-24 brands-postgresql-icon"></span> PostgreSQL,
+        <span class="demo-icon-font-24 brands-springboot-icon"></span> Springboot,
+        <span class="demo-icon-font-24 brands-xamarin-icon"></span> XAML
+      </p>
     </div>
     <div class="projet-section">Contexte : <p>Comme projet de fin de formation, nous voulions créer un quiz basé sur des
         coordonnées géographiques.<br>L'utilisateur devait répondre à des questions de type "où se situe cette ville /
@@ -179,20 +221,28 @@
         du client android contenant l'interface du jeu.</p>
     </div>
     <div class="projet-section">Compétences : <p>
-        <span class="comp-link" on-click="[[redirect]]">Algorithme et Structure de Données</span>,
-        <span class="comp-link" on-click="[[redirect]]">Base de Données</span>,
-        <span class="comp-link" on-click="[[redirect]]">Développement Web</span>,
-        <span class="comp-link" on-click="[[redirect]]">Curiosité</span>,
-        <span class="comp-link" on-click="[[redirect]]">Esprit d'équipe</span>.</p>
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-tree-icon-16"></span>
+          Algorithme et Structure de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-database-icon-16"></span>
+          Base de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-sphere-icon-16"></span>
+          Développement Web</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-eye-icon-16"></span>
+          Curiosité</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 demo-people-icon-24"></span>
+          Esprit d'équipe</span>.</p>
     </div>
   </div>
   <!-- FIN Big Browser -->
 
   <!-- Dungeon -->
   <div class="projet-block" data-bind="visible: realState() == 5">
-    <div class="projet-title">Dungeon: The Quest of Sir Beback</div>
+    <div class="projet-title"><span class="demo-icon-font-24 moon-pacman-icon-16"></span> Dungeon: The Quest of Sir
+      Beback</div>
     <div class="projet-desc">Jeux d'aventure 2D en pixel art.</div>
-    <div class="projet-section">Technologies utilisées : <p>OpenSuse, C</p>
+    <div class="projet-section">Technologies utilisées : <p>
+        <span class="demo-icon-font-24 brands-c-icon"></span>,
+        <span class="demo-icon-font-24 brands-opensuse-icon"></span> OpenSuse</p>
     </div>
     <div class="projet-section">Contexte : <p>Comme projet de fin d'année, nous voulions créer un jeu vidéo d'aventure
         avec quelques aspects RPG (gestion d'inventaire, progression).<br>L'histoire suivait un chevalier en armure
@@ -209,24 +259,32 @@
         Nous avions également codé un pilote pour pouvoir brancher une manette et jouer avec.</p>
     </div>
     <div class="projet-section">Compétences :<p>
-        <span class="comp-link" on-click="[[redirect]]">Algorithme et Structure de Données</span>,
-        <!-- <span class="comp-link" on-click="[[redirect]]">Ingénierie du logiciel</span>, -->
-        <span class="comp-link" on-click="[[redirect]]">Curiosité</span>,
-        <span class="comp-link" on-click="[[redirect]]">Esprit d'équipe</span>.</p>
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-tree-icon-16"></span>
+          Algorithme et Structure de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-eye-icon-16"></span>
+          Curiosité</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 demo-people-icon-24"></span>
+          Esprit d'équipe</span>.</p>
+      </p>
     </div>
   </div>
   <!-- FIN Dungeon -->
 
   <!-- DobberMiam -->
   <div class="projet-block" data-bind="visible: realState() == 6">
-    <div class="projet-title">DobberMiam</div>
+    <div class="projet-title"><span class="demo-icon-font-24 moon-spoon-knife-icon-16"></span> DobberMiam</div>
     <div class="projet-desc">Site web de partage de recettes de cuisine.</div>
-    <div class="projet-section">Technologies utilisées : <p>MongoDB, NodeJs, REST, React</p>
+    <div class="projet-section">Technologies utilisées : <p>
+        <span class="demo-icon-font-24 brands-mongodb-icon"></span> MongoDB,
+        <span class="demo-icon-font-24 brands-node-dot-js-icon"></span> NodeJs,
+        <span class="demo-icon-font-24 brands-graphql-icon"></span> GraphQL,
+        <span class="demo-icon-font-24 brands-react-icon"></span> React</p>
     </div>
     <div class="projet-section">Contexte : <p>Une part non négligeable de mes intéractions avec les autres membres de ma
         famille (nombreuse) consiste à tester, goûter et partager des recettes de cuisine.<br>Des notes griffonnées sur
         un bout de papier aux répertoires pleins de recettes numérisées, faire le tri et organiser ces recettes
-        récupérées au fil des ans peut s'avérer complexe.<br>(Et frustrant lorsque l'on cherche précisément CETTE
+        récupérées au fil des ans peut s'avérer complexe.<br>(Et frustrant lorsque l'on cherche précisément <span
+          style="font-style: italic;">cette</span>
         recette, reçue il y a quelques mois et bien sauvegardée ... mais où ?)<br>Le projet d'une plateforme
         de partage des-dites recettes s'est donc très vite imposé de lui-même.<br>Ce projet est actuellement en cours.
       </p>
@@ -243,19 +301,32 @@
         NoSQL, j'ai décidé de la refaire avec MongoDB.<br>L'API est réalisée avec NodeJS et Fastify.</p>
     </div>
     <div class="projet-section">Compétences :<p>
-        <span class="comp-link" on-click="[[redirect]]">Algorithme et Structure de Données</span>,
-        <span class="comp-link" on-click="[[redirect]]">Développement Web</span>,
-        <span class="comp-link" on-click="[[redirect]]">Autonomie</span>,
-        <span class="comp-link" on-click="[[redirect]]">Curiosité</span>.</p>
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-tree-icon-16"></span>
+          Algorithme et Structure de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-database-icon-16"></span>
+          Base de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-sphere-icon-16"></span>
+          Développement Web</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-compass2-icon-16"></span>
+          Autonomie</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-eye-icon-16"></span>
+          Curiosité</span>.
+      </p>
     </div>
   </div>
   <!-- FIN DobberMiam -->
 
   <!-- Fantasy SpellBook -->
   <div class="projet-block" data-bind="visible: realState() == 7">
-    <div class="projet-title">D&D Apps : Spellbook & Combat Calculator</div>
+    <div class="projet-title"><span class="demo-icon-font-24 moon-dice-icon-16"></span> D&D Apps : Spellbook & Combat
+      Calculator</div>
     <div class="projet-desc">Applications mobile de support au jeu de rôle.</div>
-    <div class="projet-section">Technologies utilisées : <p>JavaScript, OracleJet, Cordova, NodeJS</p>
+    <div class="projet-section">Technologies utilisées : <p>
+        <span class="demo-icon-font-24 brands-apachecordova-icon"></span> Cordova,
+        <span class="demo-icon-font-24 brands-javascript-icon"></span> JavaScript,
+        <span class="demo-icon-font-24 brands-node-dot-js-icon"></span> NodeJS,
+        <img src="../../images/ojet.ico" alt="OracleJet" width="24" height="24"> OracleJet
+      </p>
     </div>
     <div class="projet-section">Contexte : <p>Le jeu de rôle en général et Donjons & Dragons en particulier font depuis
         longtemps partie de mes passions.<br>Cependant, ce type de jeu peut paraître complexe aux débutants, surtout
@@ -271,16 +342,19 @@
     </div>
     <div class="projet-section">Équipe :<p>Je suis seul développeur sur ce projet.</p>
     </div>
-    <div class="projet-section">Fonctionnement :<p>Ce sont deux applications hybrides, développées en Javascript avec
+    <div class="projet-section">Fonctionnement :<p>Ce sont deux applications hybrides, développées en JavaScript avec
         les frameworks OracleJet et Apache Cordova.<br>L'application SpellBook permet de consulter une liste de sorts,
         d'en afficher les détails, et de filtrer la liste selon différents critères.<br>L'application Combat Calculator
         calcule automatiquement différents bonus selon de nombreux paramètres.
       </p>
     </div>
     <div class="projet-section">Compétences :<p>
-        <span class="comp-link" on-click="[[redirect]]">Algorithme et Structure de Données</span>,
-        <span class="comp-link" on-click="[[redirect]]">Développement Web</span>,
-        <span class="comp-link" on-click="[[redirect]]">Autonomie</span>.</div>
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-tree-icon-16"></span>
+          Algorithme et Structure de Données</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-sphere-icon-16"></span>
+          Développement Web</span>,
+        <span class="comp-link" on-click="[[redirect]]"><span class="demo-icon-font-24 moon-compass2-icon-16"></span>
+          Autonomie</span>.</div>
   </div>
   <!-- FIN Fantasy SpellBook -->
 

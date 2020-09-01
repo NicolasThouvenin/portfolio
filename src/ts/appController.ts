@@ -88,9 +88,9 @@ class RootViewModel {
 
     // navigation setup
     let navData: NavDataItem[] = [
-      new NavDataItem({name: "Accueil", id: "accueil", iconClass: "oj-navigationlist-item-icon demo-icon-font-24 demo-chart-icon-24"}),
-      new NavDataItem({name: "Mes Réalisations", id: "realisations", iconClass: "oj-navigationlist-item-icon demo-icon-font-24 demo-fire-icon-24"}),
-      new NavDataItem({name: "Mes compétences", id: "competences", iconClass: "oj-navigationlist-item-icon demo-icon-font-24 demo-people-icon-24"}),
+      new NavDataItem({name: "Accueil", id: "accueil", iconClass: "oj-navigationlist-item-icon demo-icon-font-24 demo-home-icon-24"}),
+      new NavDataItem({name: "Mes Réalisations", id: "realisations", iconClass: "oj-navigationlist-item-icon demo-icon-font-24 moon-books-icon-16"}),
+      new NavDataItem({name: "Mes compétences", id: "competences", iconClass: "oj-navigationlist-item-icon demo-icon-font-24 moon-cogs-icon-16"}),
       new NavDataItem({name: "Me contacter", id: "contact", iconClass: "oj-navigationlist-item-icon demo-icon-font-24 demo-info-icon-24"})
     ];
     this.navDataSource = new ArrayDataProvider(navData, {idAttribute: "id"});

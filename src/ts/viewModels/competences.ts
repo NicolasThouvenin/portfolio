@@ -27,7 +27,7 @@ class IncidentsViewModel {
       // console.log(input)
       console.log(input.target.textContent);
       console.log(this.realArray.indexOf(input.target.textContent));
-      Router.rootInstance.store([this.realArray.indexOf(input.target.textContent)]);
+      Router.rootInstance.store([this.realArray.indexOf(input.target.textContent.trim())]);
       Router.rootInstance.go("realisations");
       // this.compState(input.target.id.substring(4, 5));
     }

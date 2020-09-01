@@ -11,24 +11,31 @@
     <h1 style="margin-top: 20px;">Mes Compétences</h1>
     <div class="comp-category">
       <div class="comp-title">Professionnelles :</div>
-      <div id="comp1" class="comp-name" on-click="[[click]]">Algorithme et Structure de Données
+      <div id="comp1" class="comp-name" on-click="[[click]]"><span class="demo-icon-font-24 moon-tree-icon-16"></span>
+        Algorithme et Structure de Données
       </div>
-      <div id="comp2" class="comp-name" on-click="[[click]]">Base de Données
+      <div id="comp2" class="comp-name" on-click="[[click]]"><span
+          class="demo-icon-font-24 moon-database-icon-16"></span> Base de Données
       </div>
-      <div id="comp3" class="comp-name" on-click="[[click]]">Développement Web
+      <div id="comp3" class="comp-name" on-click="[[click]]"><span class="demo-icon-font-24 moon-sphere-icon-16"></span>
+        Développement Web
       </div>
-      <div id="comp4" class="comp-name" on-click="[[click]]">Gestion de Projet
+      <div id="comp4" class="comp-name" on-click="[[click]]"><span
+          class="demo-icon-font-24 moon-clipboard-icon-16"></span> Gestion de Projet
       </div>
       <!-- <div id="comp5" class="comp-name" on-click="[[click]]">Ingénierie du logiciel
       </div> -->
     </div>
     <div class="comp-category">
       <div class="comp-title">Humaines :</div>
-      <div id="comp6" class="comp-name" on-click="[[click]]">Autonomie
+      <div id="comp6" class="comp-name" on-click="[[click]]"><span
+          class="demo-icon-font-24 moon-compass2-icon-16"></span> Autonomie
       </div>
-      <div id="comp7" class="comp-name" on-click="[[click]]">Curiosité
+      <div id="comp7" class="comp-name" on-click="[[click]]"><span class="demo-icon-font-24 moon-eye-icon-16"></span>
+        Curiosité
       </div>
-      <div id="comp8" class="comp-name" on-click="[[click]]">Esprit d'équipe
+      <div id="comp8" class="comp-name" on-click="[[click]]"><span class="demo-icon-font-24 demo-people-icon-24"></span>
+        Esprit d'équipe
       </div>
       <!-- <div id="comp9" class="comp-name" on-click="[[click]]">Initiative
       </div> -->
@@ -40,7 +47,8 @@
 
   <!-- ALGO -->
   <div class="comp-block" data-bind="visible: compState() == 1">
-    <div class="comp-label">Algorithme et Structure de Données</div>
+    <div class="comp-label"><span class="demo-icon-font-24 moon-tree-icon-16"></span> Algorithme et Structure de Données
+    </div>
     <div class="comp-desc">En informatique, une structure de données est une manière d'organiser les données pour les
       traiter plus facilement.<br>Ces données seront ainsi utilisés au sein d'un algorithme, c'est à dire un ensemble
       d'opérations et de règles pouvant résoudre un problème.
@@ -62,20 +70,27 @@
         facilement pour le modifier).</p>
     </div>
     <div class="comp-section">Projets liés :<p>
-        <span class="comp-link" on-click="[[redirect]]">Calendrier Logistique</span>,
-        <span class="comp-link" on-click="[[redirect]]">Factory</span>,
-        <span class="comp-link" on-click="[[redirect]]">Bubble Up</span>,
-        <span class="comp-link" on-click="[[redirect]]">Big Browser</span>,
-        <span class="comp-link" on-click="[[redirect]]">Dungeon</span>,
-        <span class="comp-link" on-click="[[redirect]]">DobberMiam</span>,
-        <span class="comp-link" on-click="[[redirect]]">D&D Apps</span>.</p>
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-calendar-icon-16"></span> Calendrier Logistique</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-tablet-icon-16"></span> Factory</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-bubbles-icon-16"></span> Bubble Up</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-earth-icon-16"></span> Big Browser</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-pacman-icon-16"></span> Dungeon</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-spoon-knife-icon-16"></span> DobberMiam</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-dice-icon-16"></span> D&D Apps</span>.</p>
     </div>
   </div>
   <!-- FIN ALGO -->
 
   <!-- BDD -->
   <div class="comp-block" data-bind="visible: compState() == 2">
-    <div class="comp-label">Base de Données</div>
+    <div class="comp-label"><span class="demo-icon-font-24 moon-database-icon-16"></span> Base de Données</div>
     <div class="comp-desc">Une base de données (BDD) est une collection d’informations organisées afin d’être facilement
       consultables, gérables et mises à jour.<br>
       Elles sont de deux types, relationnelles ou non relationnelles.<br>
@@ -98,18 +113,23 @@
           on-click="[[redirect]]">DobberMiam</span> utilisant une BDD non relationnelle.</p>
     </div>
     <div class="comp-section">Projets liés :<p>
-        <span class="comp-link" on-click="[[redirect]]">Calendrier Logistique</span>,
-        <span class="comp-link" on-click="[[redirect]]">Factory</span>,
-        <span class="comp-link" on-click="[[redirect]]">Bubble Up</span>,
-        <span class="comp-link" on-click="[[redirect]]">Big Browser</span>,
-        <span class="comp-link" on-click="[[redirect]]">DobberMiam</span>.</p>
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-calendar-icon-16"></span> Calendrier Logistique</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-tablet-icon-16"></span> Factory</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-bubbles-icon-16"></span> Bubble Up</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-earth-icon-16"></span> Big Browser</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-spoon-knife-icon-16"></span> DobberMiam</span>.</p>
     </div>
   </div>
   <!-- FIN BD -->
 
   <!-- WEB -->
   <div class="comp-block" data-bind="visible: compState() == 3">
-    <div class="comp-label">Développement Web</div>
+    <div class="comp-label"><span class="demo-icon-font-24 moon-sphere-icon-16"></span> Développement Web</div>
     <div class="comp-desc">Le développement Web regroupe tous les aspects de la création de pages web.<br>Cela comprend
       le "front", c'est à dire le design de l'interface utilisateur, mais aussi le "back", la partie liée au serveur et
       aux couches d'accès de données.<br>
@@ -132,12 +152,18 @@
       </p>
     </div>
     <div class="comp-section">Projets liés :<p>
-        <span class="comp-link" on-click="[[redirect]]">Calendrier Logistique</span>,
-        <span class="comp-link" on-click="[[redirect]]">Factory</span>,
-        <span class="comp-link" on-click="[[redirect]]">Bubble Up</span>,
-        <span class="comp-link" on-click="[[redirect]]">Big Browser</span>,
-        <span class="comp-link" on-click="[[redirect]]">DobberMiam</span>,
-        <span class="comp-link" on-click="[[redirect]]">D&D Apps</span>.
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-calendar-icon-16"></span> Calendrier Logistique</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-tablet-icon-16"></span> Factory</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-bubbles-icon-16"></span> Bubble Up</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-earth-icon-16"></span> Big Browser</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-spoon-knife-icon-16"></span> DobberMiam</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-dice-icon-16"></span> D&D Apps</span>.
       </p>
     </div>
   </div>
@@ -145,7 +171,7 @@
 
   <!-- GESTION -->
   <div class="comp-block" data-bind="visible: compState() == 4">
-    <div class="comp-label">Gestion de Projet</div>
+    <div class="comp-label"><span class="demo-icon-font-24 moon-clipboard-icon-16"></span> Gestion de Projet</div>
     <div class="comp-desc">La gestion de projet est l'ensemble des activités visant à
       organiser le bon déroulement d’un projet et à en atteindre les objectifs. Elle consiste à appliquer les méthodes,
       techniques, et outils de gestion spécifiques aux différentes étapes du projet, depuis l'étude de faisabilité
@@ -165,8 +191,10 @@
         temps et/ou une équipe importante.</p>
     </div>
     <div class="comp-section">Projets liés :<p>
-        <span class="comp-link" on-click="[[redirect]]">Factory</span>,
-        <span class="comp-link" on-click="[[redirect]]">Bubble Up</span>.
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-tablet-icon-16"></span> Factory</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-bubbles-icon-16"></span> Bubble Up</span>.
       </p>
     </div>
   </div>
@@ -193,7 +221,7 @@
 
   <!-- AUTO -->
   <div class="comp-block" data-bind="visible: compState() == 6">
-    <div class="comp-label">Autonomie</div>
+    <div class="comp-label"><span class="demo-icon-font-24 moon-compass2-icon-16"></span> Autonomie</div>
     <div class="comp-desc">
     </div>
     <div class="comp-section">Mise en contexte :<p></p>
@@ -201,16 +229,19 @@
     <div class="comp-section">Point de vue :<p></p>
     </div>
     <div class="comp-section">Projets liés :<p>
-        <span class="comp-link" on-click="[[redirect]]">Calendrier Logistique</span>,
-        <span class="comp-link" on-click="[[redirect]]">DobberMiam</span>,
-        <span class="comp-link" on-click="[[redirect]]">D&D Apps</span>.</p>
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-calendar-icon-16"></span> Calendrier Logistique</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-spoon-knife-icon-16"></span> DobberMiam</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-dice-icon-16"></span> D&D Apps</span>.</p>
     </div>
   </div>
   <!-- FIN AUTO -->
 
   <!-- CURIOSITY -->
   <div class="comp-block" data-bind="visible: compState() == 7">
-    <div class="comp-label">Curiosité</div>
+    <div class="comp-label"><span class="demo-icon-font-24 moon-eye-icon-16"></span> Curiosité</div>
     <div class="comp-desc">
     </div>
     <div class="comp-section">Mise en contexte :<p></p>
@@ -218,18 +249,23 @@
     <div class="comp-section">Point de vue :<p></p>
     </div>
     <div class="comp-section">Projets liés :<p>
-        <span class="comp-link" on-click="[[redirect]]">Calendrier Logistique</span>,
-        <span class="comp-link" on-click="[[redirect]]">Factory</span>,
-        <span class="comp-link" on-click="[[redirect]]">Big Browser</span>,
-        <span class="comp-link" on-click="[[redirect]]">Dungeon</span>,
-        <span class="comp-link" on-click="[[redirect]]">DobberMiam</span>.</p>
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-calendar-icon-16"></span> Calendrier Logistique</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-tablet-icon-16"></span> Factory</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-earth-icon-16"></span> Big Browser</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-pacman-icon-16"></span> Dungeon</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-spoon-knife-icon-16"></span> DobberMiam</span>.</p>
     </div>
   </div>
   <!-- FIN CURIOSITY -->
 
   <!-- TEAM -->
   <div class="comp-block" data-bind="visible: compState() == 8">
-    <div class="comp-label">Esprit d'équipe</div>
+    <div class="comp-label"><span class="demo-icon-font-24 demo-people-icon-24"></span> Esprit d'équipe</div>
     <div class="comp-desc">
     </div>
     <div class="comp-section">Mise en contexte :<p></p>
@@ -237,10 +273,14 @@
     <div class="comp-section">Point de vue :<p></p>
     </div>
     <div class="comp-section">Projets liés :<p>
-        <span class="comp-link" on-click="[[redirect]]">Factory</span>,
-        <span class="comp-link" on-click="[[redirect]]">Bubble Up</span>,
-        <span class="comp-link" on-click="[[redirect]]">Big Browser</span>,
-        <span class="comp-link" on-click="[[redirect]]">Dungeon</span>.</p>
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-tablet-icon-16"></span> Factory</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-bubbles-icon-16"></span> Bubble Up</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-earth-icon-16"></span> Big Browser</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-pacman-icon-16"></span> Dungeon</span>.</p>
     </div>
   </div>
   <!-- FIN TEAM -->

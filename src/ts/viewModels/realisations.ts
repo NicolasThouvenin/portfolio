@@ -9,7 +9,7 @@ class CustomersViewModel {
 
   constructor() {
     document.addEventListener("backbutton", this.onBackKeyDown, false);
-    this.compArray = ["index", "Algorithme et Structure de Données", "Base de Données", "Développement Web", "Gestion de Projet", "Ingénierie du logiciel", "Autonomie", "Curiosité", "Équipier", "Initiative", "Gourmet"];
+    this.compArray = ["index", "Algorithme et Structure de Données", "Base de Données", "Développement Web", "Gestion de Projet", "Ingénierie du logiciel", "Autonomie", "Curiosité", "Esprit d'équipe", "Initiative", "Gourmet"];
     const real = Router.rootInstance.retrieve();
     if (real) {
       Router.rootInstance.store([0]);
@@ -24,7 +24,8 @@ class CustomersViewModel {
     }
 
     this.redirect = (input) => {
-      Router.rootInstance.store([this.compArray.indexOf(input.target.textContent)]);
+      console.log(input.target.textContent.trim())
+      Router.rootInstance.store([this.compArray.indexOf(input.target.textContent.trim())]);
       Router.rootInstance.go("competences");
     }
 
