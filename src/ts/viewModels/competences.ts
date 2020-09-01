@@ -20,6 +20,7 @@ class IncidentsViewModel {
       // console.log(input)
       console.log(input.target.id.substring(4, 5));
       this.compState(input.target.id.substring(4, 5));
+      window.scrollTo(0,0);
     }
 
     this.redirect = (input) => {

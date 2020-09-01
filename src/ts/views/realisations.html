@@ -4,7 +4,7 @@
  -->
 <div class="oj-hybrid-padding">
   <h1 id="real0" style="margin-top: 20px; cursor: pointer; font-size: 20px;" on-click="[[click]]"
-    data-bind="visible: realState() > 0">Retour</h1>
+    data-bind="visible: realState() > 0">&lt; Mes Réalisations</h1>
 
   <!-- MENU -->
   <div class="real-menu" data-bind="visible: realState() == 0">
@@ -174,8 +174,7 @@
     </div>
     <div class="projet-section">Fonctionnement :<p>L'application est composée :<br>- d'une base de données PostgreSQL,
         particulièrement intéressante pour stocker des données géographiques,<br>- d'une API Java GraphQL réalisée avec
-        le framework Springboot,<br>- d'une application desktop XAML d'administration de la <span class="comp-link"
-          on-click="[[redirect]]">Base de Données</span>, permettant
+        le framework Springboot,<br>- d'une application desktop XAML d'administration de la base de données, permettant
         de créer, supprimer et mettre à jour la liste des questions qui pourront être posées aux utilisateurs,<br>- et
         du client android contenant l'interface du jeu.</p>
     </div>
@@ -183,7 +182,6 @@
         <span class="comp-link" on-click="[[redirect]]">Algorithme et Structure de Données</span>,
         <span class="comp-link" on-click="[[redirect]]">Base de Données</span>,
         <span class="comp-link" on-click="[[redirect]]">Développement Web</span>,
-        <!-- <span class="comp-link" on-click="[[redirect]]">Ingénierie du logiciel</span>, -->
         <span class="comp-link" on-click="[[redirect]]">Curiosité</span>,
         <span class="comp-link" on-click="[[redirect]]">Esprit d'équipe</span>.</p>
     </div>
@@ -287,5 +285,5 @@
   <!-- FIN Fantasy SpellBook -->
 
   <h1 id="real0" style="margin-top: 20px; cursor: pointer; font-size: 20px;" on-click="[[click]]"
-    data-bind="visible: realState() > 0">Retour</h1>
+    data-bind="visible: realState() > 0">&lt; Mes Réalisations</h1>
 </div>
