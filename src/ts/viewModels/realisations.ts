@@ -24,8 +24,9 @@ class CustomersViewModel {
     }
 
     this.redirect = (input) => {
-      console.log(input.target.textContent.trim())
-      Router.rootInstance.store([this.compArray.indexOf(input.target.textContent.trim())]);
+      const link = input.target.textContent.trim() ? input.target.textContent.trim() : input.target.nextSibling.textContent.trim();
+      console.log(link);
+      Router.rootInstance.store([this.compArray.indexOf(link)]);
       Router.rootInstance.go("competences");
     }
 

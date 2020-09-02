@@ -7,10 +7,6 @@
 */
 
 body {
-    cursor: default;
-}
-
-.no-selection {
     -webkit-user-select: none;
     /* Safari */
     -moz-user-select: none;
@@ -19,7 +15,10 @@ body {
     /* IE10+/Edge */
     user-select: none;
     /* Standard */
+    cursor: default;
 }
+
+.no-selection {}
 
 /* INDEX */
 
@@ -91,9 +90,7 @@ body {
     pointer-events: none;
 }
 
-.projet-block {
-
-}
+.projet-block {}
 
 .projet-title {
     font-size: 30px;
@@ -114,7 +111,6 @@ body {
 .projet-section p {
     font-size: 18px;
 }
-
 
 /* END REALISATION */
 

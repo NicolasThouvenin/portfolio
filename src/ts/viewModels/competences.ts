@@ -24,12 +24,10 @@ class IncidentsViewModel {
     }
 
     this.redirect = (input) => {
-      // console.log(input)
-      console.log(input.target.textContent);
-      console.log(this.realArray.indexOf(input.target.textContent));
-      Router.rootInstance.store([this.realArray.indexOf(input.target.textContent.trim())]);
+      const link = input.target.textContent.trim() ? input.target.textContent.trim() : input.target.nextSibling.textContent.trim();
+      console.log(link)
+      Router.rootInstance.store([this.realArray.indexOf(link)]);
       Router.rootInstance.go("realisations");
-      // this.compState(input.target.id.substring(4, 5));
     }
   }
 
