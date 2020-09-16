@@ -55,6 +55,19 @@ body {
 
 /* REALISATION */
 
+.return-button {
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: #f0f0f0;
+    width: 180 px;
+}
+
+.return-button:hover {
+    color: #02629f;
+}
+
 .real-category {
     margin-top: 20px;
 }
@@ -78,7 +91,12 @@ body {
     background-color: #f0f0f0;
 }
 
+.real-block:hover .real-name {
+    color: #02639fa1;
+}
+
 .real-name {
+    color: #02629f;
     font-size: 22px;
     pointer-events: none;
     margin-bottom: 5px;
@@ -132,6 +150,7 @@ body {
 }
 
 .comp-name {
+    color: #02629f;
     padding: 5px 10px;
     font-size: 16px;
     margin: 10px 0;
@@ -140,7 +159,7 @@ body {
 }
 
 .comp-name:hover {
-    color: #111;
+    color: #02639fa1;
     background-color: #f0f0f0;
 }
 
