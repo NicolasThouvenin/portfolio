@@ -3,7 +3,8 @@
  The Universal Permissive License (UPL), Version 1.0
  -->
 <div class="oj-hybrid-padding">
-  <h1 id="comp0" class="return-button" on-click="[[click]]" data-bind="visible: compState() > 0">&lt; Mes Compétences
+  <h1 id="comp0" style="width: 180px;" class="return-button" on-click="[[click]]" data-bind="visible: compState() > 0">
+    &lt; Mes Compétences
   </h1>
 
   <!-- MENU -->
@@ -222,15 +223,29 @@
   <!-- AUTO -->
   <div class="comp-block" data-bind="visible: compState() == 6">
     <div class="comp-label"><span class="demo-icon-font-24 moon-compass2-icon-16"></span> Autonomie</div>
-    <div class="comp-desc">
+    <div class="comp-desc">L'autonomie est la capacité à fonctionner seul dans la réalisation d'une ou plusieurs tâches,
+      sans dépendre d'autrui.
     </div>
-    <div class="comp-section">Mise en contexte :<p></p>
+    <div class="comp-section">Mise en contexte :<p>Nombre de projets et tâches que j'ai pu réaliser en entreprise (<span
+          class="comp-link" on-click="[[redirect]]">Calendrier Logistique</span>, <span class="comp-link"
+          on-click="[[redirect]]">Factory</span>) ont concernés des technologies jusqu'alors très peu utilisés dans mon
+        service. J'ai donc travaillé sur ces sujets soit seul développeur, soit au sein d'une équipe mais seul sur ma
+        partie, en effectuant mes propres recherches. </p>
     </div>
-    <div class="comp-section">Point de vue :<p></p>
+    <div class="comp-section">Point de vue :<p>L'autonomie est une compétence clef dans ma pratique professionnelle.
+        Dans tous les projets présentés ici il y a eu au moins un moment où je me suis retrouvé seul face à un problème,
+        une question. Il s'agit alors de faire ses propres recherches sur le sujet, trouver différents éléments de
+        réponse,
+        décider de la voie à suivre et être prêt à assumer ses choix par la suite. Être autonome signifie ainsi porter
+        la responsabilité de l'orientation et de la réalisation de son développement.</p>
     </div>
     <div class="comp-section">Projets liés :<p>
         <span class="comp-link" on-click="[[redirect]]">
           <span class="demo-icon-font-24 moon-calendar-icon-16"></span> Calendrier Logistique</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-tablet-icon-16"></span> Factory</span>,
+        <span class="comp-link" on-click="[[redirect]]">
+          <span class="demo-icon-font-24 moon-pacman-icon-16"></span> Dungeon</span>,
         <span class="comp-link" on-click="[[redirect]]">
           <span class="demo-icon-font-24 moon-spoon-knife-icon-16"></span> DobberMiam</span>,
         <span class="comp-link" on-click="[[redirect]]">
@@ -242,11 +257,31 @@
   <!-- CURIOSITY -->
   <div class="comp-block" data-bind="visible: compState() == 7">
     <div class="comp-label"><span class="demo-icon-font-24 moon-eye-icon-16"></span> Curiosité</div>
-    <div class="comp-desc">
+    <div class="comp-desc">Qualité de quelqu'un qui a le désir de connaître, de savoir. La curiosité est un attrait, un
+      enthousiasme spontané envers le nouveau et l'inconnu.
     </div>
-    <div class="comp-section">Mise en contexte :<p></p>
+    <div class="comp-section">Mise en contexte :<p>La raison d'être de l'équipe que j'ai intégré à mon arrivée à GFI est
+        l'innovation; la recherche de nouvelles façons de travailler et de nouvelles technologies à utiliser autour de
+        notre coeur de métier. Avec l'aide de commerciaux au contact de nos clients, nous avons compilé une série de
+        demandes réccurentes de leur part auxquelles les technologies "classiques" de notre service ne peuvent pas
+        répondre. Nous avons alors cherché des technologies à même d'apporter des solutions à ces demandes, et ce
+        faisant élargi l'éventail des technologies que nous utilisont aujourd'hui.
+        <br>Plus personnellement, en réalisant le projet <span class="comp-link"
+          on-click="[[redirect]]">DobberMiam</span> j'avais initialement prévu de créer une <span class="comp-link"
+          on-click="[[redirectComp]]">base de
+          données</span> relationelle classique, mais n'ayant jamais manipulé de BDD non-relationnelle j'ai préféré
+        basculer vers du MongoDB.</p>
     </div>
-    <div class="comp-section">Point de vue :<p></p>
+    <div class="comp-section">Point de vue :<p><span style="font-style: italic;">"Il faut avant tout former des esprits
+          curieux"</span> disant Jean Capelle,
+        co-fondateur de l'Institut National des Sciences Appliquées. Bien que n'ayant jamais mis les pieds dans l'une de
+        ces écoles, je ne peux qu'être d'accord avec ce principe érigé en devise chez ces dernières. La curiosité est
+        une valeur précieuse, tout particulièrement chez un informaticien. La vitesse d'évolution des technologies et
+        langages demande une veille et un intérêt constant envers les nouvelles solutions et outils à disposition afin
+        de ne pas stagner dans des pratiques rendus obsolètes.<br>La curiosité s'exerce également en entreprise
+        lors du lancement d'un projet chez un client. S'intéresser au contexte de ce dernier permet souvent de redéfinir
+        ou d'afiner le cahier des charges, ou d'orienter vers des choix technologiques (et/ou ergonomiques) plus
+        personnalisées et plus adaptés aux besoins de ce client.</p>
     </div>
     <div class="comp-section">Projets liés :<p>
         <span class="comp-link" on-click="[[redirect]]">
@@ -266,11 +301,35 @@
   <!-- TEAM -->
   <div class="comp-block" data-bind="visible: compState() == 8">
     <div class="comp-label"><span class="demo-icon-font-24 demo-people-icon-24"></span> Esprit d'équipe</div>
-    <div class="comp-desc">
+    <div class="comp-desc">L’esprit d’équipe traduit la capacité d’une personne à participer à l’atteinte d’un objectif
+      partagé, à collaborer avec les autres, à privilégier la réussite du groupe plutôt que sa réussite individuelle.
     </div>
-    <div class="comp-section">Mise en contexte :<p></p>
+    <div class="comp-section">Mise en contexte :<p>L'esprit d'équipe peut prendre beaucoup de formes au sein d'un projet
+        informatique. Prendre soin de laisser un code propre, clair et surtout commenté en est la plus commune, la plus
+        basique même. Mais prendre le temps d'aider un collègue, l'aider à se débloquer en lui pointant une erreur,
+        transmettre ses connaissances ou lui indiquer une source d'informations utiles sont autant de manifestations de
+        l'esprit d'équipe qui peuvent faire énormément de différences au sein d'un projet. Lors du projet <span
+          class="comp-link" on-click="[[redirect]]">Factory</span> la majorité des développeurs étaient débutants sur
+        les technologies utilisées, j'ai donc passé la moitié de mon temps à les seconder, passant de l'un à l'autre
+        pour leurs permettre d'avancer sans perdre trop de temps à chercher une réponse à un problème que j'aurais déjà
+        rencontré, et dont j'aurais probablement déjà la réponse.<br>De même lors du projet <span class="comp-link"
+          on-click="[[redirect]]">Bubble Up</span>, nous avions des niveaux très différents en développement ou en
+        administration système et réseau, ce qui nous a permis de profiter des forces de chacun pour compenser les
+        lacunes des autres, et permettre à ces derniers de progresser dans les domaines leurs faisant
+        défaut.<br>L'esprit d'équipe représente aussi la
+        bienveillance à
+        l'égard de son équipe, même lors de coup de pressions lors de retards de livraison par exemple, ou de bugs
+        détéctés par le clients. Il s'agit alors de rester soudé, de ne jamais chercher de coupable, mais des solutions,
+        et de répartir les blames comme les félicitations sans distinctions au sein de l'équipe.</p>
     </div>
-    <div class="comp-section">Point de vue :<p></p>
+    <div class="comp-section">Point de vue :<p>Prendre 5-10 min de son temps pour aider un collègue peut facilement
+        faire gagner plusieurs heures à ce dernier. J'ai la chance de travailler dans un service où tout le monde est
+        disposé à répondre aux questions, et où personnes ne refusera d'aider un collègue dans le besoin. L'impact sur
+        l'ambience de travail est énorme et produit un cercle vertueux où chaque nouvel arrivant, ayant bénéficié de ce
+        climat d'aide et de bienveillance sera lui-même ensuite plus disposé à aider et prendre du temps pour autrui.
+        <br>Pour ma part, pour avoir vu l'impact dans différents projets de conflits d'égos et de manque de
+        bienveillance entre membres d'équipes, l'importance de cette compétence est une évidence, et quelque chose que
+        tout chef d'équipe devrait promouvoir et entretenir.</p>
     </div>
     <div class="comp-section">Projets liés :<p>
         <span class="comp-link" on-click="[[redirect]]">
@@ -322,6 +381,7 @@
   </div>
   <!-- FIN EASTER -->
 
-  <h1 id="comp0" class="return-button" on-click="[[click]]" data-bind="visible: compState() > 0">&lt; Mes Compétences
+  <h1 id="comp0" style="width: 180px;" class="return-button" on-click="[[click]]" data-bind="visible: compState() > 0">
+    &lt; Mes Compétences
   </h1>
 </div>

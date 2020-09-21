@@ -7,6 +7,7 @@ class IncidentsViewModel {
   compState: ko.Observable<string>;
   redirect: (input: any) => void;
   realArray: string[];
+  redirectComp: () => void;
 
   constructor() {
     this.realArray = ["index", "Calendrier Logistique", "Factory", "Bubble Up", "Big Browser", "Dungeon", "DobberMiam", "D&D Apps"];
@@ -28,6 +29,10 @@ class IncidentsViewModel {
       console.log(link)
       Router.rootInstance.store([this.realArray.indexOf(link)]);
       Router.rootInstance.go("realisations");
+    }
+    
+    this.redirectComp = () => {
+      this.compState("2")
     }
   }
 
